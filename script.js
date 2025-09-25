@@ -11,7 +11,7 @@ const timerEl = document.getElementById("timer");
 timer = setInterval(() => {
   time++;
   timerEl.textContent = time;
-  if (foundCount === 10) {
+  if (foundCount === 11) {
     clearInterval(timer);
     alert("Alla skatter hittade på " + time + " sekunder!");
   }
@@ -87,6 +87,13 @@ treasure9.addEventListener("click", () => {
 const treasure10 = document.getElementById("treasure10");
 treasure10.addEventListener("click", () => {
   treasure10.style.color = "red";
+  foundCount++;
+  foundCountEl.textContent = foundCount;
+  alert("Grattis! Du hittade en skatt!");
+}, {once: true});
+const treasure11 = document.getElementById("treasure11");
+treasure11.addEventListener("click", () => {
+  treasure11.style.border = "4px solid red";
   foundCount++;
   foundCountEl.textContent = foundCount;
   alert("Grattis! Du hittade en skatt!");
