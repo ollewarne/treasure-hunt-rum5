@@ -1,9 +1,4 @@
 /* Denna Heads-Up-Display är det fritt fram att styla om och placera på andra ställen! */
-
-*{
-  margin: 0;
-  padding:0;
-}
  body{
   background-color: #F3F2EC;
   color: #1E93AB;
@@ -27,7 +22,15 @@ section {
 
  a{
   text-decoration: none;
-
+ }
+h1{
+  color: #2b5c68;
+}
+h2{
+  text-align: center;
+}
+ p{
+  text-align: justify;
  }
 
  .treasure:hover{
