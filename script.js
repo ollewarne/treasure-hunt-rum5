@@ -11,6 +11,10 @@ const timerEl = document.getElementById("timer");
 timer = setInterval(() => {
   time++;
   timerEl.textContent = time;
+  if (foundCount === 10) {
+    clearInterval(timer);
+    alert("Alla skatter hittade på " + time + " sekunder!");
+  }
 }, 1000);
 
 // --- Här ska ni lägga in era egna skatter --- //
@@ -21,11 +25,6 @@ treasure1.addEventListener("click", () => {
   foundCount++;
   foundCountEl.textContent = foundCount;
   alert("Grattis! Du hittade en skatt!");
-
-  if (foundCount === 10) {
-    clearInterval(timer);
-    alert("Alla skatter hittade på " + time + " sekunder!");
-  }
 });
 
 // ... fortsätt för alla skatter ...
