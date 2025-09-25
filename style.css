@@ -1,5 +1,43 @@
 /* Denna Heads-Up-Display är det fritt fram att styla om och placera på andra ställen! */
 
+*{
+  margin: 0;
+  padding:0;
+}
+ body{
+  background-color: #F3F2EC;
+  color: #1E93AB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  line-height: 20px;
+  font-size: 18px;
+  padding: 50px;
+  
+  
+ }
+
+section {
+  display:flex;
+  flex-direction: column;
+  gap: 30px;
+ }
+
+ a{
+  text-decoration: none;
+
+ }
+
+ .treasure:hover{
+  color: magenta;
+  cursor: pointer;
+  text-decoration: underline;
+ }
+
+
+
 #hud {
       position: fixed;
       top: 0;
