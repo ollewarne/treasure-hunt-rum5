@@ -1,1 +1,2 @@
-# treasure-hunt-rum5
+# workshop-skattjakt
+Boilerplate för skattjakt!
